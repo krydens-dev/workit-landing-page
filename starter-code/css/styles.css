@@ -1,0 +1,50 @@
+:root {
+    /* Fonts */
+
+    --font-fraunces: "Fraunces", serif;
+    --font-manrope: "Manrope", sans-serif;
+
+    /* Colors */
+
+    --clr-green: hsl(150, 100%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-purple-900: hsl(273, 85%, 13%);
+    --clr-purple-500: hsl(271, 12%, 34%);
+    --clr-purple-100: hsl(276, 100%, 99%);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+.navigation {
+    border: 1px solid red;
+    background-color: var(--clr-purple-900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.25rem 0 1.25rem;
+}
+
+.navigation__cta {
+    color: var(--clr-white);
+    
+}
+
+.hero {
+    background-color: var(--clr-purple-900);
+}
+
+
+
+
+
+
+/*btn -> for BEM reusable styling for the links*/

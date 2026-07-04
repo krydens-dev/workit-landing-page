@@ -3,47 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Workit landing page</title>
 </head>
 <body>
-
-  Apply for access
-
-  Data tailored to your needs.
-
-  Learn more
-  
-  1
-
-  Actionable insights
-  
-  Optimize your products, improve customer satisfaction and stay ahead of the competition 
-  with our product data analytics.
-
-  2
-
-  Data-driven decisions
-
-  Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-  you unlock insights hidden in your product data.
-
-  3
-
-  Always affordable
-
-  Always affordable pricing that scales with your business. Get top-quality product data 
-  analytics services without hidden costs or unexpected fees.
-
-  Be the first to test
-
-  Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-  beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-  in touch to schedule a call.
-
-  Apply for access
-
+  <header>
+    <nav class="navigation">
+      <a href="#" class="navigation__logo">
+        <img src="assets/images/logo-light.svg" alt="Company Name">
+      </a>
+      <a href="#" class="navigation__cta">Apply for access</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="hero__title">Data tailored to your needs.</h1>
+      <a href="#" class="hero__cta">Learn more</a>
+      <img class="hero__image" src="assets/images/image-hero.webp" alt="Phone image hero">
+    </section>
+    <section class="features">
+      <article class="feature">
+        <span class="feature__number">1</span>
+        <h3 class="feature__title">Actionable insights</h3>
+        <p class="feature__description"> 
+          Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.
+        </p>
+      </article>
+      <article class="feature">
+        <span class="feature__number">2</span>
+        <h3 class="feature__title">Data-driven decisions</h3>
+        <p class="feature__description"> 
+          Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.
+        </p>
+      </article>
+      <article class="feature">
+        <span class="feature__number">3</span>
+        <h3 class="feature__title">Always affordable</h3>
+        <p class="feature__description"> 
+          Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.
+        </p>
+      </article>
+    </section>
+    <section class="founder">
+      <img class="founder__image" src="assets/images/image-founder.webp" alt="Louis Graham, founder of the company">
+      <h3 class="founder__title">Be the first to test</h3>
+      <p class="founder__description">
+        Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I&#39;ll be in touch to schedule a call.
+      </p>
+      <a href="#" class="founder__cta">Apply for access</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <img class="footer__logo" src="assets/images/logo-dark.svg" alt="Company Name">
+    <div class="footer__socials">
+      <a href="#" class="footer__social-link" aria-label="Facebook">
+        <img class="footer__social-icon" src="assets/images/icon-facebook.svg" alt="">
+      </a>
+      <a href="#" class="footer__social-link" aria-label="Twitter">
+        <img class="footer__social-icon" src="assets/images/icon-twitter.svg" alt="">
+      </a>
+      <a href="#" class="footer__social-link" aria-label="Instagram">
+        <img class="footer__social-icon" src="assets/images/icon-instagram.svg" alt="">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
