@@ -1,10 +1,10 @@
 :root {
-    /* Fonts */
+        /* Fonts */
 
-    --font-fraunces: "Fraunces", serif;
+    --font-fraunces: "Fraunces";
     --font-manrope: "Manrope", sans-serif;
 
-    /* Colors */
+        /* Colors */
 
     --clr-green: hsl(150, 100%, 63%);
     --clr-white: hsl(0, 0%, 100%);
@@ -23,9 +23,9 @@
 body {
 
 }
+    /* NAV */
 
 .navigation {
-    border: 1px solid red;
     background-color: var(--clr-purple-900);
     display: flex;
     justify-content: space-between;
@@ -35,16 +35,65 @@ body {
 
 .navigation__cta {
     color: var(--clr-white);
-    
+    font-family: var(--font-manrope);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.8;
+    text-decoration: none;
 }
+
+/* /*btn -> for BEM reusable styling for the links */
+
+.border-bottom {
+    border-bottom: 3px solid var(--clr-green);
+}
+/* end */
+
+    /* HERO */
 
 .hero {
     background-color: var(--clr-purple-900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 50px ;
+    border-bottom-right-radius: 5%;
+    gap: .5rem;
+    padding: 3.5rem 1.25rem 9rem 1.25rem;
+    /*
+    position: relative;
+    */
 }
 
+.hero__title {
+    color: var(--clr-white);
+    font-family: var(--font-fraunces);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
 
+.hero__cta {
+    padding: .75rem 2rem;
+    background-color: var(--clr-green);
+    color: var(--clr-purple-900);
+    text-decoration: none;
+    font-family: var(--font-manrope);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
 
+.hero__image-wrapper {
+    max-width: 20rem;
+    /*
+    position: absolute; 
+    bottom: -100px;  
+    */
+}
 
-
-
-/*btn -> for BEM reusable styling for the links*/
+.hero__image {
+    width: 100%;
+}
