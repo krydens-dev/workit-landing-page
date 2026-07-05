@@ -56,13 +56,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom-left-radius: 50px ;
-    border-bottom-right-radius: 5%;
     gap: .5rem;
     padding: 3.5rem 1.25rem 9rem 1.25rem;
-    /*
     position: relative;
-    */
+    border-radius: 0px 0px 130px 130px / 0px 0px 20px 20px;
 }
 
 .hero__title {
@@ -88,12 +85,12 @@ body {
 
 .hero__image-wrapper {
     max-width: 20rem;
-    /*
-    position: absolute; 
-    bottom: -100px;  
-    */
+    position: absolute;
+    z-index: 10;
+    bottom: -110px;
 }
 
 .hero__image {
     width: 100%;
+    
 }
