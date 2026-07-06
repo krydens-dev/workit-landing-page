@@ -42,8 +42,6 @@ body {
     text-decoration: none;
 }
 
-/* /*btn -> for BEM reusable styling for the links */
-
 .border-bottom {
     border-bottom: 3px solid var(--clr-green);
 }
@@ -72,7 +70,7 @@ body {
     text-align: center;
 }
 
-.hero__cta {
+.hero__cta, .btn {
     padding: .75rem 2rem;
     background-color: var(--clr-green);
     color: var(--clr-purple-900);
@@ -190,4 +188,20 @@ body {
     font-weight: 400;
     line-height: 1.8;
     text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 5rem;
+    display: grid;
+    place-items: center;
+    gap: 3.5rem;
+}
+
+.footer__socials {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 1.75rem;
 }
