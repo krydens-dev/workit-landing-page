@@ -1,7 +1,7 @@
 :root {
         /* Fonts */
 
-    --font-fraunces: "Fraunces";
+    --font-fraunces: "Fraunces, sans-serif";
     --font-manrope: "Manrope", sans-serif;
 
         /* Colors */
@@ -40,12 +40,15 @@ body {
     font-weight: 700;
     line-height: 1.8;
     text-decoration: none;
+    border-bottom: 3px solid var(--clr-green);
 }
 
 .border-bottom {
-    border-bottom: 3px solid var(--clr-green);
+    text-decoration: underline;
+    text-decoration-color: var(--clr-green);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
 }
-/* end */
 
     /* HERO */
 
@@ -57,17 +60,27 @@ body {
     gap: .5rem;
     padding: 3.5rem 1.25rem 9rem 1.25rem;
     position: relative;
-    border-radius: 0px 0px 130px 130px / 0px 0px 20px 20px;
+    border-radius: 0px 0px 100px 110px / 20px 100px 20px 20px;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
 }
 
 .hero__title {
     color: var(--clr-white);
     font-family: var(--font-fraunces);
     font-size: 3rem;
-    font-weight: 600;
-    line-height: 100%;
-    margin-bottom: 2.5rem;
+    font-weight:400;
+    line-height: 1;
     text-align: center;
+    max-width: 20.93rem;
+    
 }
 
 .hero__cta, .btn {
